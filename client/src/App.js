@@ -10,6 +10,7 @@ import Cart from './components/Cart';
 
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
+import CheckOutSuccess from './components/CheckoutSuccess';
 
 function App() {
   return (
@@ -21,9 +22,9 @@ function App() {
           <Routes>
             <Route path='/' exact element={<Home />} />
             <Route path='/cart' element={<Cart />} />
+            <Route path='/checkout-success' element={<CheckOutSuccess />} />
             <Route path='/register' element={<Register />} />
             <Route path='/login' element={<Login />} />
-
           </Routes>
         </div>
       </BrowserRouter>

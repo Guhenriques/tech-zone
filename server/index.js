@@ -4,7 +4,10 @@ const mongoose = require("mongoose");
 
 const register = require("./routes/register");
 const login = require("./routes/login");
+const stripe = require("./routes/stripe");
+
 const products = require("./products");
+
 
 const app = express();
 const port = process.env.PORT || 5000
@@ -18,6 +21,7 @@ app.use(cors());
 
 app.use("/api/register", register);
 app.use("/api/login", login);
+app.use("/api/stripe", stripe);
 
 // routes
 app.get("/", (req, res) => {
