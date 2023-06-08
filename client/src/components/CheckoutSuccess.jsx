@@ -1,8 +1,7 @@
-
-
 const CheckOutSuccess = () => {
   return ( 
     <h2>Checkout Success</h2>
+    
    );
 }
  

@@ -23,6 +23,7 @@ app.use("/api/register", register);
 app.use("/api/login", login);
 app.use("/api/stripe", stripe);
 
+
 // routes
 app.get("/", (req, res) => {
   res.send("Server running...")
