@@ -17,7 +17,8 @@ This is an e-commerce website application. It allows users to purchase products 
 ## Future implementations 
 
 - Customers will be able to see their orders.
-- More products will be available soon
+- Product full details clickable.
+- More products will be available soon.
 
 ## Technologies Used
 
