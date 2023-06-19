@@ -6,10 +6,11 @@ import axios from "axios";
 const initialState = {
   items: [],
   status: null,
+  product: null,
 };
 
 
-// fetching data using asyncthunk
+// fetching products data using asyncthunk
 export const productsFetch = createAsyncThunk(
   "products/productsFetch",
   async () => {
@@ -17,6 +18,15 @@ export const productsFetch = createAsyncThunk(
     return response?.data;
   }
 )
+
+// fetch specific product using asyncthunk
+export const fetchProductById = createAsyncThunk(
+  "products/fetchProductById",
+  async (productId) => {
+    const response = await axios.get(`http://localhost:5000/products/${productId}`);
+    return response?.data;
+  }
+);
 
 
 const productsSlice = createSlice({
@@ -32,6 +42,16 @@ const productsSlice = createSlice({
       state.items = action.payload;
     },
     [productsFetch.rejected]: (state, action) => {
+      state.status = "rejected";
+    },
+    [fetchProductById.pending]: (state, action) => {
+      state.status = "pending";
+    },
+    [fetchProductById.fulfilled]: (state, action) => {
+      state.status = "success";
+      state.product = action.payload;
+    },
+    [fetchProductById.rejected]: (state, action) => {
       state.status = "rejected";
     },
   } // only handle action types

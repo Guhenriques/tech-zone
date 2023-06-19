@@ -27,12 +27,23 @@ app.use("/api/stripe", stripe);
 // routes
 app.get("/", (req, res) => {
   res.send("Server running...")
-})
+});
+
+app.get("/products/:productId", (req, res) => {
+  const { productId } = req.params;
+  const product = products.find((product) => product.id === productId);
+
+  if (!product) {
+    return res.status(404).json({ error: "Product not found" });
+  }
+
+  res.json(product);
+});
 
 app.get("/products", (req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.send(JSON.stringify(products, null, 2));
-})
+});
 
 
 app.listen(port, console.log(`Server running on port ${port}`))

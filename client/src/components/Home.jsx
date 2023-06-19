@@ -1,4 +1,3 @@
-import React from "react";
 import { useGetAllProductsQuery } from "../slices/productsApi";
 
 import { useNavigate } from "react-router-dom";
@@ -19,6 +18,10 @@ const Home = () => {
     navigate("/cart");
   };
 
+  const handleProductClick = (productId) => {
+    navigate(`/products/${productId}`);
+  };
+
   return (
     <div className="home-container">
       {isLoading ? (
@@ -29,7 +32,7 @@ const Home = () => {
         <>
           <h2>Products</h2>
           <div className="products">
-            {data?.map(product => <div key={product.id} className="product">
+            {data?.map(product => <div key={product.id} className="product" onClick={() => handleProductClick(product.id)}>
               <h3>{product.name}</h3>
               <img src={product.image} alt={product.name} />
               <div className="details">
