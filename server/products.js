@@ -24,7 +24,7 @@ const products = [
     id: 4,
     name: "Galaxy S23",
     desc: "6.1-inch display",
-    price: "599",
+    price: 599,
     image: "https://res.cloudinary.com/dvteazrgs/image/upload/c_scale,w_300/v1687168151/efpk9il4xxc3ytxs0ty0.jpg"
   },
   {
