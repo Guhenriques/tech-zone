@@ -18,9 +18,11 @@ const Home = () => {
     navigate("/cart");
   };
 
+  /*
   const handleProductClick = (productId) => {
     navigate(`/products/${productId}`);
   };
+  */
 
   return (
     <div className="home-container">
@@ -32,7 +34,7 @@ const Home = () => {
         <>
           <h2>Products</h2>
           <div className="products">
-            {data?.map(product => <div key={product.id} className="product" onClick={() => handleProductClick(product.id)}>
+            {data?.map(product => <div key={product.id} className="product">
               <h3>{product.name}</h3>
               <img src={product.image} alt={product.name} />
               <div className="details">
@@ -51,3 +53,4 @@ const Home = () => {
 
 export default Home;
 
+{/*  onClick={() => handleProductClick(product.id)} */}

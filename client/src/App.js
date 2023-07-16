@@ -11,7 +11,7 @@ import Cart from './components/Cart';
 import Register from './components/auth/Register';
 import Login from './components/auth/Login';
 import CheckOutSuccess from './components/CheckoutSuccess';
-import ProductDetails from './components/ProductDetails';
+//import ProductDetails from './components/ProductDetails';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <div className='content-container'>
           <Routes>
             <Route path='/' exact element={<Home />} />
-            <Route path='/products/:productId' element={<ProductDetails />} />
+            {/*<Route path='/products/:productId' element={<ProductDetails />} />*/}
             <Route path='/cart' element={<Cart />} />
             <Route path='/checkout-success' element={<CheckOutSuccess />} />
             <Route path='/register' element={<Register />} />
