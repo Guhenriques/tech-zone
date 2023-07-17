@@ -11,9 +11,11 @@ const NavBar = () => {
 
   return (
     <nav className="nav-bar">
-      <Link to="/">
-        <h2>Tech Zone</h2>
-      </Link>
+      <LogoContainer>
+        <Link to="/">
+          <h2 class="logo">Tech Zone</h2>
+        </Link>
+      </LogoContainer>
       <Link to="/cart">
         <div className="nav-bag">
           <svg xmlns="http://www.w3.org/2000/svg"
@@ -40,8 +42,9 @@ const NavBar = () => {
             <Link to="/login">Login</Link>
             <Link to="/register">Register</Link>
           </AuthLinks>
-        )}
-    </nav>
+        )
+      }
+    </nav >
   );
 };
 
@@ -58,4 +61,7 @@ const AuthLinks = styled.div`
 const Logout = styled.div`
   color: white;
   cursor: pointer;
+`;
+
+const LogoContainer = styled.div`
 `;

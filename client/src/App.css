@@ -16,12 +16,14 @@
 /* NavBar */
 
 .nav-bar {
+  position: relative;
   height: 70px;
   background-color: #292929;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4rem;
+  padding: 0 1rem;
+  margin: auto;
 }
 
 .nav-bar a {
@@ -41,6 +43,9 @@
 .nav-bag {
   display: flex;
   align-items: center;
+  left: 49%;
+  bottom: 25%;
+  position: absolute;
 }
 
 .bag-quantity {
