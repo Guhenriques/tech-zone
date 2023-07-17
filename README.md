@@ -14,6 +14,15 @@ This is an e-commerce website application. It allows users to purchase products 
 - Visitors can add items to Cart even before registering.
 - Items are kept after logged in or registering.
 
+## Screenshots
+
+![image](https://res.cloudinary.com/dvteazrgs/image/upload/v1689584561/e-commerce2_hkq37i.png)
+
+![image](https://res.cloudinary.com/dvteazrgs/image/upload/v1689584561/e-commerce3_nihzsp.png)
+
+![image](https://res.cloudinary.com/dvteazrgs/image/upload/v1689584620/e-commerce4_frcf0b.png)
+
+
 ## Future implementations 
 
 - Customers will be able to see their orders.
