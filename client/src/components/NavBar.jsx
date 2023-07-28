@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import styled from 'styled-components';
 import { logoutUser } from '../slices/authSlice';
 import { toast } from 'react-toastify';
+import logo from '../assets/logo-nobg.png';
 
 const NavBar = () => {
   const dispatch = useDispatch()
@@ -13,7 +14,9 @@ const NavBar = () => {
     <nav className="nav-bar">
       <LogoContainer>
         <Link to="/">
-          <h2 class="logo">Tech Zone</h2>
+          <div className="nav-logo">
+            <img src={logo} alt="Logo" />
+          </div>
         </Link>
       </LogoContainer>
       <Link to="/cart">

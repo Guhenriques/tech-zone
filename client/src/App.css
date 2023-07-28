@@ -26,6 +26,11 @@
   margin: auto;
 }
 
+.nav-logo img {
+  width: 250px;
+  height: auto;
+}
+
 .nav-bar a {
   text-decoration: none;
   color: white;
@@ -311,7 +316,7 @@
 }
 
 .cart-checkout .cart-login {
-  background-color: #f8e79b;
+  background-color: #f5dc6e;
   color: #000000;
   font-weight: bold;
 }
