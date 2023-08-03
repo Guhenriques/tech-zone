@@ -1,6 +1,7 @@
 
 # E-Commerce MERN App
-This is an e-commerce website application. It allows users to purchase products online.
+Tech Zone is a user-friendly ecommerce website application that allows customers to purchase products with ease. Users can create accounts, log in securely, access their shopping carts and proceed to checkout.
+
 
 ## Features
 
