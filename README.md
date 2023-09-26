@@ -1,5 +1,5 @@
 
-# E-Commerce MERN App
+# Tech Zone
 Tech Zone is a user-friendly ecommerce website application that allows customers to purchase products with ease. Users can create accounts, log in securely, access their shopping carts and proceed to checkout.
 
 
@@ -30,7 +30,7 @@ Tech Zone is a user-friendly ecommerce website application that allows customers
 - Product full details clickable.
 - More products will be available soon.
 
-## Technologies Used
+## Technologies Used (MERN Stack)
 
 - Javascript
 - Node.js
